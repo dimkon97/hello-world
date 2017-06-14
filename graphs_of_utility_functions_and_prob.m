@@ -1,3 +1,5 @@
+#Assume p1 = 0.1 and p2 = 0.9
+
 [alpha,gamma] = meshgrid(0:0.01:2);
 
 U_X1 = real((exp(-(log(0.1)).^gamma)*(100.^alpha) + (1-exp(-(log(0.9)).^gamma))*(80.^alpha)));

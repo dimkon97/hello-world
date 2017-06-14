@@ -11,9 +11,13 @@ U_Y1 = real((exp(-(log(0.1)).^gamma)*(190.^alpha) + (1-exp(-(log(0.9)).^gamma))*
 
 P = (exp(U_X1)./(exp(U_X1) + exp(U_Y1)));
 
-
+figure()
 surf(alpha,gamma,U_Y1);
+
+figure()
 surf(alpha,gamma,P);
+
+figure()
 surf(alpha,gamma,U_X1);
 
 colormap winter;

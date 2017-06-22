@@ -1,8 +1,11 @@
+%this function takes as input the "cleared data" consisting of the 10 binary outputs for every valid 
+%individual, as well as the range of alpha and gamma values and the step of increase, and produces three histograms 
+%representing the frequency of alpha and gamma values for which individual neg log likelihood is minimized for all candidates and 
+%also representing the frequency of minimum neg log likelihoods across all individuals
 
 
 
-
-function [] = negative_likelyhood(A,start,step,stop)
+function [] = negative_likelihood(A,start,step,stop)
 
 %initialize variables
 
@@ -106,7 +109,7 @@ for i = 1:10:length(A);
     
 end
 
-disp(alpha_min_total);
+
 %Draw graphs
 
 figure();

@@ -1,3 +1,8 @@
+%This function takes as an input the range of alpha and gamma values (as well as the step of increase)
+%and produces three graphs that represent the percentage of safe choices an "ideal" candidate would make 
+%given three choice models (hardmax, binomial, epsilon greedy).
+
+
 
 function[] = graphs_of_different_choice_functions(min, max, step) 
 

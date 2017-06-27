@@ -136,9 +136,32 @@ title('Frequency of minimum negative log likelihoods across all individuals')
 
 hold on
 
+figure();
+scatter(min_total, gamma_min_total_noise);
+xlabel('min total');
+ylabel('gamma min');
 
+hold on
 
+figure();
+c = linspace(0,-2000,length(A)/10);
+sz = 25;
+scatter(alpha_min_total_noise, gamma_min_total_noise, sz, c, 'filled');
+xlabel('alpha min');
+ylabel('gamma min');
+colorbar;
 
+hold on
+
+figure();
+d = linspace(0,100,length(A)/10);
+sz = 25;
+scatter(alpha_min_total_noise, gamma_min_total_noise, sz, d, 'filled');
+xlabel('alpha min');
+ylabel('gamma min');
+colorbar;
+
+hold on
 
 
 
